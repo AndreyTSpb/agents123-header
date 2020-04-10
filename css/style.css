@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Galpon-Black"; /* Гарнитура шрифта */
+    src: url(../fonts/Galpon-Black.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Pompadur; /* Гарнитура шрифта */
+    src: url(fonts/pompadur.ttf); /* Путь к файлу со шрифтом */
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #efefef;
+    font-family: "Roboto";
+    height: 2000px;
+}
+
+.container {
+    width: 1193px;
+    margin: 0 auto;
+}
+
+/*==== HEADER MENU ====*/
+
+/*header bg*/
+.header_bg{
+    /* Style for "Vector Sma" */
+    width: 1193px;
+    height: 142px;
+    background-image: url("../img/bg/menu.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: fixed;
+    z-index: 50;
+}
+
+/*Logo in header*/
+.header-logo{
+    width: 135px;
+    height: 47px;
+    box-shadow: 0 0 7px 1px rgba(20, 20, 16, 0.48);
+    border: 1px solid #ffffff;
+}
+
+/*icons instogram*/
+.icons-instogram{
+    /* Style for "Vector Sma" */
+    width: 37px;
+    height: 36px;
+}
+
+/*==== SLIDER ====*/
+
+/*BG for slide of magazine-agent123*/
+.bg-mag-agent123{
+    /* Style for "fon\" */
+    position: relative;
+    height: 645px;
+    /* opacity: 0.78; */
+    background-image: url("../img/bg/bg-slider-magazine-agents123.png");
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+}
+.bg-end-line{
+    position: absolute;
+    bottom: 0px;
+    background-image: url("../img/bg/line-end-slider.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 100%;
+    opacity: 1;
+}
+
+.h2-slider-agent123{
+    text-align: center;
+    width: 681px;
+    margin: 0 auto;
+    padding-top: 141px;
+    color: #b70c7e;
+    font-family: "Galpon-Black";
+    font-size: 38px;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.img-logo-agent{
+    display: flex;
+    justify-content: start;
+    align-items:flex-end;
+    /* Style for "Vector Sma" */
+    margin: 0 auto;
+    margin-top: 81px;
+    width: 320px;
+    height: 152px;
+    background-image: url("../img/logo-agenty.png");
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+.img-logo-agent .btn-read{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/buttons/bnt-reading.png');
+    background-repeat: no-repeat;
+    width: 151px;
+    height: 33px;
+}
+
+
