@@ -140,7 +140,7 @@ body{
     text-decoration: none;
 }
 
-/*==== SLIDER ====*/
+/*==== SLIDER AGENTS123====*/
 
 /*BG for slide of magazine-agent123*/
 .bg-mag-agent123{
@@ -265,4 +265,39 @@ body{
     background-image: url("../img/devka.png");
     background-repeat: no-repeat;
     z-index: 3;
+}
+
+/**==== SLIDER ONLINE ====**/
+.bg-slider-online{
+    /* Style for "fon\" */
+    position: relative;
+    height: 645px;
+    /* opacity: 0.78; */
+    background-image: url("../img/bg/bg-slider-online.png");
+    background-position: 50% 100%;
+}
+.bg-slider-online .h2-slider-agent123{
+    width: 800px;
+}
+
+.bg-slider-online .h3-slider-online{
+    /* Style for "Дистанцион" */
+    text-align: center;
+    width: 713px;
+    color: #71196f;
+    font-family: "CCTimSaleLower";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.bg-slider-online .btn-run{
+    /* Style for "Vector Sma" */
+    width: 195px;
+    height: 95px;
+    margin: 0 auto;
+}
+.bg-slider-online .btn-run :hover{
+    margin-top: 3px;
 }
