@@ -3,8 +3,8 @@
     src: url(../fonts/Galpon-Black.otf); /* Путь к файлу со шрифтом */
 }
 @font-face {
-    font-family: Pompadur; /* Гарнитура шрифта */
-    src: url(fonts/pompadur.ttf); /* Путь к файлу со шрифтом */
+    font-family: "CCTimSaleLower"; /* Гарнитура шрифта */
+    src: url(../fonts/v_CCTimSaleLower_v1.1.ttf); /* Путь к файлу со шрифтом */
 }
 *{
     box-sizing: border-box;
@@ -36,20 +36,108 @@ body{
     position: fixed;
     z-index: 50;
 }
+/*top-memu*/
+.top-menu{
+    display: flex;
+    align-items: center;
+}
 
 /*Logo in header*/
 .header-logo{
-    width: 135px;
-    height: 47px;
-    box-shadow: 0 0 7px 1px rgba(20, 20, 16, 0.48);
-    border: 1px solid #ffffff;
+    display: inline-block;
+    margin-left: 129px;
 }
-
+/*menu header*/
+.nav-container{
+    display: inline-block;
+    margin: 0 auto;
+    width: 634px;
+}
+.nav-container ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+.nav-container ul li{
+    list-style-type: none; /* Убираем маркеры */
+    display: inline;
+}
+.nav-container ul li a{
+    font-family: "CCTimSaleLower";
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.social-buttons{
+    display: inline-block;
+    margin-right: 129px;
+}
 /*icons instogram*/
 .icons-instogram{
     /* Style for "Vector Sma" */
     width: 37px;
     height: 36px;
+    margin-right: 17px;
+}
+
+/*login-menu*/
+.login-menu-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.login-menu{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    
+}
+.login-menu form{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 5px;
+}
+/*button login*/
+.login-menu form button{
+    display: inline-block;
+    border: 0 !important;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.login-menu form input{
+    border: 0px;
+    background-color: #efefef;
+    border-radius: 15px;
+    height: 30px;
+    text-align: center;
+    font-family: "CCTimSaleLower";
+    font-size: 15px;
+    color: #000;
+    text-transform: uppercase;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*records*/
+.header_bg .records{
+    margin: 0 auto;
+    width: 145px;
+    margin-top: 6px;
+}
+.header_bg .records a{
+    font-family: "CCTimSaleLower";
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /*==== SLIDER ====*/
@@ -60,7 +148,7 @@ body{
     position: relative;
     height: 645px;
     /* opacity: 0.78; */
-    background-image: url("../img/bg/bg-slider-magazine-agents123.png");
+    background-image: url("../img/bg/bg-slider-magazine-agents123-2.png");
     background-repeat: no-repeat;
     background-position: 0% 40%;
 }
@@ -108,6 +196,17 @@ body{
     background-repeat: no-repeat;
     width: 151px;
     height: 33px;
+}
+.img-logo-agent .btn-read a{
+    text-decoration: none;
+    color: #6c1b78;
+    font-family: "CCTimSaleLower";
+    font-size: 32px;
+    font-weight: 400;
+    padding-top: 1px;
+}
+.img-logo-agent .btn-read :hover{
+    cursor: pointer;
 }
 
 .ars-slider-agents123{
