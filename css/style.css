@@ -72,6 +72,7 @@ body{
     height: 18px;
     width: 100%;
     opacity: 1;
+    z-index: 1;
 }
 
 .h2-slider-agent123{
@@ -109,4 +110,60 @@ body{
     height: 33px;
 }
 
+.ars-slider-agents123{
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    /* Style for "ars" */
+    width: 246px;
+    height: 421px;
+    background-image: url("../img/ars.png");
+    background-repeat: no-repeat;
+    z-index: 2;
+}
 
+.buk-slider-agents123{
+    position: absolute;
+    left: 200px;
+    bottom: 10px;
+    /* Style for "ars" */
+    width: 223px;
+    height: 359px;
+    background-image: url("../img/buk.png");
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.bab-slider-agents123{
+    /* Style for "bab" */
+    position: absolute;
+    width: 86px;
+    height: 89px;
+    left: 64px;
+    top: 100px;
+    background-image: url("../img/bab.png");
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+/*Орущий*/
+.xz-slider-agents123{
+    /* Style for "Slice 1" */
+    width: 265px;
+    height: 433px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-image: url("../img/xz.png");
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+.devka-slider-agents123{
+    /* Style for "Layer 28" */
+    width: 213px;
+    height: 361px;
+    position: absolute;
+    right: 228px;
+    bottom: 8px;
+    background-image: url("../img/devka.png");
+    background-repeat: no-repeat;
+    z-index: 3;
+}
