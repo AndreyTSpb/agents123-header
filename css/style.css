@@ -141,15 +141,23 @@ body{
 }
 
 /*==== SLIDER AGENTS123====*/
+.slider-item{
+    position: relative;
+    height: 645px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    display: none;
+}
+
+/*SHOW DIV*/
+.show{
+    display: block;
+}
 
 /*BG for slide of magazine-agent123*/
 .bg-mag-agent123{
-    /* Style for "fon\" */
-    position: relative;
-    height: 645px;
     /* opacity: 0.78; */
     background-image: url("../img/bg/bg-slider-magazine-agents123-2.png");
-    background-repeat: no-repeat;
     background-position: 0% 40%;
 }
 .bg-end-line{
@@ -269,14 +277,9 @@ body{
 
 /**==== SLIDER ONLINE ====**/
 .bg-slider-online{
-    /* Style for "fon\" */
-    position: relative;
-    height: 645px;
     /* opacity: 0.78; */
     background-image: url("../img/bg/bg-slider-online-2.png");
     background-position: 50% 100%;
-    background-repeat: no-repeat;
-    z-index: 1;
 }
 .bg-slider-online .h2-slider-agent123{
     width: 800px;
@@ -364,3 +367,46 @@ body{
     background-position: 0% 0%;
     z-index: 2;
   }
+
+/*==== SLIDER QUESTS ====*/
+.bg-slider-quests{
+    /* opacity: 0.78; */
+    background-image: url("../img/bg/bg-slider-quest.png");
+    background-position: 90% 50%;
+}
+.bg-slider-quests .h2-slider-agent123{
+    width: 800px;
+}
+
+.bg-slider-quests .btn-download-quests{
+    /* Style for "Vector Sma" */
+    width: 135px;
+    height: 135px;
+    border: 6px solid #71196f;
+    border-radius:100%;
+    margin: 0 auto;
+    z-index: 5;
+    background-image: url("../img/bg/btn-download-center.png");
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-slider-quests .btn-download-quests:hover{
+    background-image: url("../img/bg/btn-download-center-yellow.png");
+    background-repeat:no-repeat;
+}
+.bg-slider-quests .btn-download-quests a{
+    /* Style for "Vector Sma" */
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-slider-quests .btn-download-quests a img{
+    /* Style for "Vector Sma" */
+    width: 45px;
+    height: 64px;
+}
