@@ -146,7 +146,7 @@ body{
     height: 645px;
     background-repeat: no-repeat;
     z-index: 1;
-    /* display: none; */
+    display: none;
 }
 
 /*SHOW DIV*/
