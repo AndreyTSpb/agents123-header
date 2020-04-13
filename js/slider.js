@@ -9,31 +9,25 @@ window.addEventListener("DOMContentLoaded", function(){
         indexShow = 1;
     
     if(slider){
-        let slids  = slider.querySelectorAll('.slider-item'),
+        let slids       = slider.querySelectorAll('.slider-item'),
             dotWraper   = slider.querySelector('.dots'),
-            dots   = dotWraper.querySelectorAll('.dot'),
-            num_slids = slids.length,
-            sec = 5;
+            dots        = dotWraper.querySelectorAll('.dot'),
+            num_slids   = slids.length,
+            prev        = slider.querySelector('.prev'),
+            next        = slider.querySelector('.next'),
+            sec = 7;
         /* Скрываем все слайды */
         show(indexShow);
 
-        /**
-         * Прокрутка слайдера с задержкой sec *1000
-         */
-        setInterval(()=>{
-            show(++indexShow);
-        }, sec *1000); // устанавливаем интервал перелистывания в милисекундах
+        /*кнопка назад , индекс -1*/
+        prev.addEventListener('click', ()=>{
+            moveSlide(-1);
+        });
 
-
-        // /*кнопка назад , индекс -1*/
-        // prev.addEventListener('click', ()=>{
-        //     moveSlide(-1);
-        // });
-
-        // /* кнопка вперед, индекс + 1 */
-        // next.addEventListener('click', ()=>{
-        //     moveSlide(1);
-        // });
+        /* кнопка вперед, индекс + 1 */
+        next.addEventListener('click', ()=>{
+            moveSlide(1);
+        });
 
         /* Нажатие на точки */
         dotWraper.addEventListener('click', (event)=>{
@@ -49,7 +43,7 @@ window.addEventListener("DOMContentLoaded", function(){
         * перелистывание , увеличиваем индекс на единицу
         */
         function moveSlide(n){
-            showSlid(indexShow += n);
+            show(indexShow += n);
         }
             
         /**
@@ -57,7 +51,6 @@ window.addEventListener("DOMContentLoaded", function(){
          */
         function currentSlider(n){
             show(indexShow = n);
-            sec = 5;
         }
 
         function show(index){
@@ -112,6 +105,13 @@ window.addEventListener("DOMContentLoaded", function(){
         function showDotAction(i){
             dots[i].classList.add("action");
         }
+
+        /**
+         * Прокрутка слайдера с задержкой sec *1000
+         */
+        setInterval(()=>{
+            show(++indexShow);
+        }, sec * 1000); // устанавливаем интервал перелистывания в милисекундах
     }
 
 });
