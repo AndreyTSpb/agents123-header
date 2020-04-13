@@ -214,10 +214,14 @@ body{
     font-weight: 400;
     padding-top: 1px;
 }
-.img-logo-agent .btn-read :hover{
+.img-logo-agent .btn-read:hover{
     cursor: pointer;
+    background-image: url('../img/buttons/btn-read-pink.png');
+    color: #efefef;
 }
-
+.img-logo-agent .btn-read a:hover{
+    color: #efefef;
+}
 .ars-slider-agents123{
     position: absolute;
     left: 0px;
