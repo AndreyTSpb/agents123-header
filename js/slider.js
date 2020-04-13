@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", function(){
      * 2) display:none all
      * 3) 
      */
-
+    
     let slider = document.getElementById('slider'),
         indexShow = 1;
     
