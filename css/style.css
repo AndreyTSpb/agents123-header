@@ -523,7 +523,7 @@ body{
     border: 30px solid transparent; 
     border-top-color: white;
     display: inline-block;
-    -webkit-transform: translate(-30px, -50px);
+        /* -webkit-transform: translate(-30px, -50px); */
   }
   .arrow.arrow-left{
     transform: rotate(90deg) translate(0px, 25px);
