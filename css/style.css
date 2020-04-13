@@ -483,3 +483,59 @@ body{
     height: 22px;
     border-radius: 100%;
 }
+/*Button Next\Preview slide*/
+.move-slide-button{
+    position: absolute;
+    width: 30px;
+    /* height: 600px; */
+    bottom: 0;
+    top: 0;
+    z-index: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.move-slide-button:hover{
+    cursor: pointer;
+    background-color:rgba(122,122,122,0.5);
+}
+
+.move-slide-button.prev{
+    left: 0;
+}
+.move-slide-button.next{
+    right: 0;
+}
+
+.arrow{
+    width: 0px;
+    height: 0px;
+    border: 50px solid transparent; 
+    border-top-color:#fcfcfc; 
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+  .arrow:before{
+    content:'';
+    width: 0px;
+    height: 0px;
+    border: 30px solid transparent; 
+    border-top-color: white;
+    display: inline-block;
+    -webkit-transform: translate(-30px, -50px);
+  }
+  .arrow.arrow-left{
+    transform: rotate(90deg) translate(0px, 25px);
+    -webkit-transform: rotate(90deg) translate(0px, 25px);
+    -moz-transform: rotate(90deg) translate(0px, 25px);
+    -o-transform: rotate(90deg) translate(0px, 25px);
+    -ms-transform: rotate(90deg) translate(0px, 25px);
+  }
+  .arrow.arrow-right{
+    transform: rotate(270deg) translate(0px, 25px);
+    -webkit-transform: rotate(270deg) translate(0px, 25px);
+    -moz-transform: rotate(270deg) translate(0px, 25px);
+    -o-transform: rotate(270deg) translate(0px, 25px);
+    -ms-transform: rotate(270deg) translate(0px, 25px);
+  }
