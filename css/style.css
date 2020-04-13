@@ -283,7 +283,7 @@ body{
 /**==== SLIDER ONLINE ====**/
 .bg-slider-online{
     /* opacity: 0.78; */
-    background-image: url("../img/bg/bg-slider-online-2.png");
+    background-image: url("../img/bg/bg-slider-online-2-min.png");
     background-position: 50% 100%;
 }
 .bg-slider-online .h2-slider-agent123{
@@ -376,7 +376,7 @@ body{
 /*==== SLIDER QUESTS ====*/
 .bg-slider-quests{
     /* opacity: 0.78; */
-    background-image: url("../img/bg/bg-slider-quest.png");
+    background-image: url("../img/bg/bg-slider-quest-min.png");
     background-position: 90% 50%;
 }
 .bg-slider-quests .h2-slider-agent123{

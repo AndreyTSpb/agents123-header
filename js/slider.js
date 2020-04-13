@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function(){
             num_slids   = slids.length,
             prev        = slider.querySelector('.prev'),
             next        = slider.querySelector('.next'),
-            sec = 7;
+            sec = 10;
         /* Скрываем все слайды */
         show(indexShow);
 
